@@ -1,0 +1,11 @@
+.navbar-custom {
+
+    background-color: rgba(0, 0, 0, 0);
+    z-index: 1000;
+    position: fixed;
+    width: 100%;
+  }
+  
+  .navbar-nav a , .navbar-brand {
+    color: #ffffff;
+  }

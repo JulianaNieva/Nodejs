@@ -1,0 +1,85 @@
+.buscador {
+    margin-top: 20px;
+}
+
+.product-card {
+    border: 1px solid #e0e0e0;
+    border-radius: 5px;
+    margin-bottom: 30px;
+}
+.product-card img {
+    width: 100%;
+    height: auto;
+}
+
+@media (max-width: 767px) {
+    .filter-section {
+        margin-bottom: 20px;
+    }
+}
+
+
+
+/*color botones*/
+
+.btn-primary {
+    background-color: #432818c7;
+    color: white;
+    border-color: #432818c7; 
+}
+
+.btn-primary:hover,
+.btn-primary:focus {
+    background-color: #432818;
+    color: white;
+    border-color: #432818; 
+}
+
+.btn-primary:oncli {
+    background-color: #432818;
+    color: white;
+    border-color: #432818; 
+}
+
+
+.btn-success {
+    background-color: #8d7340d5;
+    color: white;
+    border-color: #8d7340cb; 
+}
+
+.btn-success:hover,
+.btn-success:focus {
+    background-color: #8d7340;
+    color: white;
+    border-color: #8d7340; 
+}
+
+.seleccionado {
+    background-color: #432818c7;
+    border-color: #432818c7;
+    color: white;
+}
+
+
+
+/* Filtros */
+.filter-section {
+    position: sticky;
+    top: 0;
+    background-color: #f8f9fa;
+    padding: 10px 40px !important; 
+    border-radius: 5px;
+}
+
+#valoracion label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+/*.form-control-range {
+    background-color: #8d7340d5; 
+    border-color: #8d7340d5;
+}
+
+NO ME FUNCIONAAAAAA :(*/ 

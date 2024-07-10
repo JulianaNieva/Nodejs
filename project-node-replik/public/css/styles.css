@@ -1,0 +1,359 @@
+/* Estilos Generales */
+
+body{
+    /*background: url('../IMG/fondo2.jpg') center/cover no-repeat;*/
+    background-color: #faebd7;
+  }
+  
+  /* Variables */
+  :root {
+    /* Los colores mientras mas bajo el numero mas oscuro es */
+    --bordo: #6f1d1b;
+    --marron-1: #432818;
+    --marron-2: #99582A;
+    --marron-3: #bb9457;
+    --marron-4: #ffe6a7;
+    --verde-1: #9b7e46;
+    --verde-2: #afd0bf;
+    --verde-3: #e2efde;
+    --negro: #000000;
+    --blanco: #ffffff;
+  }
+  
+  
+  
+  
+  
+  /* Animaciones */
+  
+  .animacion-in {
+    animation: fade-in 1s ease-in-out forwards;
+  }
+  
+  .animacion-out {
+    animation: fade-out 1s ease-in-out forwards;
+  }
+  
+  @keyframes fade-in {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes fade-out {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+  }
+  
+  /* Reglas Responsives (media queries) */
+  
+  
+  
+  
+  /* Barra de Navegacion (navbar) */
+  .navbar-custom {
+  
+    background-color: rgba(0, 0, 0, 0);
+    z-index: 1000;
+    position: fixed;
+    width: 100%;
+  }
+  
+  .navbar-nav a , .navbar-brand {
+    color: #ffffff;
+  }
+  
+  
+  /*  SECCION NOTICIAS  */
+  
+  .noticia {
+    display: flex;
+    align-items: center;
+    padding: 0% 5%;
+  }
+  
+  .contenido {
+    flex: 1;
+  }
+  
+  .contenido h2 {
+    margin-bottom: 10px;
+    color: #432818;
+  }
+  
+  .contenido a {
+    background-color: #631a19;
+   }
+  
+  .noticia img {
+    max-width: 50%;
+    height: auto;  
+    padding: 3%;
+  }
+  
+  /* Seccion Productos */
+  
+  .product-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    /* max-width: 10rem; */
+  }
+  
+  .product-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    /* margin: 0; */
+    padding: 5px 20px;
+    min-height: 477px;
+  }
+  
+  .product-card {
+    position: absolute;
+    opacity: 0;
+    max-width: 280px;
+    border: 2px solid #999999db;
+    margin: 5px 10px;
+    transition: all 0.15s ease ;
+  }
+  
+  .product-card:hover {
+    border: 2px solid #222222;
+  }
+  
+  .product-button button {
+    border: none;
+    background-color: transparent;
+  }
+  
+  .product-button i {
+    font-size: 1.5rem;
+    color: #626161;
+  }
+  
+  .product-imagen {
+    max-width: 276px;
+  }
+  
+  .product-card-info {
+    padding: 10px 10px 15px 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .product-card-info h3 {
+    font-size: 1.1rem;
+    padding-right: 20px;
+  }
+  
+  .product-calification i {
+    font-size: 0.8rem;
+  }
+  
+  .product-description {
+    padding: 10px 0;
+    margin: 0;
+    font-size: .9rem;
+  }
+  
+  .buy-product {
+    display: flex;
+    justify-content: space-around;
+    padding: 5px;
+  }
+  
+  .buy-product button {
+    border: 1px solid #00000099;
+    background-color: transparent;
+  }
+  
+  .product-price {
+    margin: 0;
+    font-weight: bold;
+  }
+  
+  /* enlace producto - animacion */
+  .mostrar-producto {
+    opacity: 1;
+    position: relative;
+  }
+  
+  .move-left-in {
+    transform: translateX(+100%);
+    opacity: 0;
+    animation: mover-izq-in 1s ease forwards;
+  }
+  
+  .move-left-out {
+    transform: translateX(0);
+    opacity: 1;
+    animation: mover-izq-out 0.5s ease forwards;
+  }
+  
+  
+  
+  @keyframes mover-izq-in {
+    from {
+      transform: translateX(+100%);
+      opacity: 0;
+      position: absolute;
+    } to {
+      transform: translateX(0);
+      opacity: 1;
+      position: relative;
+    }
+  }
+  
+  @keyframes mover-izq-out {
+    from {
+      transform: translateX(0);
+      opacity: 1;
+      position: relative;
+    } to {
+      transform: translateX(-100%);
+      opacity: 0;
+      position: absolute;
+  
+    }
+  }
+  
+  .move-right-in {
+    transform: translateX(-100%);
+    opacity: 0;
+    animation: mover-der-in 1s ease forwards;
+  }
+  
+  .move-right-out {
+    transform: translateX(0);
+    opacity: 1;
+    animation: mover-der-out 0.5s ease forwards;
+  }
+  
+  @keyframes mover-der-in {
+    from {
+      transform: translateX(-100%);
+      opacity: 0;
+      position: absolute;
+    } to {
+      transform: translateX(0);
+      opacity: 1;
+      position: relative;
+    }
+  }
+  
+  @keyframes mover-der-out {
+    from {
+      transform: translateX(0);
+      opacity: 1;
+      position: relative;
+    } to {
+      transform: translateX(+100%);
+      opacity: 0;
+      position: absolute;
+  
+    }
+  }
+  
+  /* footer pie de pagina */
+  
+  .container-suscripcion {
+    background-color: #e2cda9;
+    padding: 3%;
+  }
+  
+  .footer-section {
+    padding: 10px 20px;
+    background-color: #bb9457;
+  
+  }
+  
+  
+  /* Pagina de login / sigin up */
+  .container-access {
+    padding: 130px;
+  }
+  .card {
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  }
+  
+  .card-title {
+    margin-bottom: 1.5rem;
+    color: #432818;
+  }
+  
+  .form-label {
+    color: #432818;
+  }
+  
+  .button {
+    background-color: #0084ff; 
+    color: white; 
+    border: none; 
+    padding: 10px 20px; 
+    font-size: 16px; 
+    cursor: pointer; 
+    border-radius: 5px; 
+    transition: background-color 0.3s ease; 
+  }
+  
+  .button:hover {
+    background-color: #005bb0; 
+  }
+  
+  .button-inactive {
+    background-color: #333333; 
+    border: none;
+    color: #ebebeb; 
+    cursor: not-allowed; 
+    pointer-events: none;
+    border-radius: 5px;
+    padding: 10px 20px; 
+    font-size: 16px;  
+  }
+  
+  @media (max-width: 576px) {
+    .card {
+      padding: 1rem;
+    }
+    
+  
+  }
+  
+  @media (min-width: 577px) and (max-width: 768px) {
+    .card {
+      padding: 2rem;
+    }
+  }
+  
+  @media (min-width: 769px) {
+    .card {
+      padding: 3rem;
+    }
+  }
+  
+  
+  
+  
+  
+  /*            Para Pagina Contacto         */ 
+   .form-check-input , .form-control{
+    border-color: #4328186c;
+   }
+  
+   .container-contact {
+    padding: 130px;
+   }
+  
